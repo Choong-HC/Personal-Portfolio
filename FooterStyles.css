@@ -1,0 +1,128 @@
+/* FooterStyles.css */
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #0077b5;
+    --background-overlay: rgba(0, 0, 0, 0.75);
+    --spacing-lg: 2rem;
+    --spacing-sm: 1rem;
+    --font-sm: 0.875rem;
+    --font-lg: 1.25rem;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: var(--spacing-lg);
+    color: var(--primary-color);
+    position: relative;
+    background: linear-gradient(var(--background-overlay), var(--background-overlay)),
+      url('../assets/GIT_BG.jpg') center/cover no-repeat;
+    overflow: hidden;
+  }
+  
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .left {
+    flex: 1;
+    margin-left: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .left h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  
+  .row {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: flex-start;
+  }
+  
+  .section {
+    flex: 1;
+  }
+  
+  .section h3 {
+    font-size: var(--font-lg);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .footer-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .email-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .email-link:hover {
+    color: var(--secondary-color);
+  }
+  
+  .linkedin-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .linkedin-link:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media screen and (max-width: 640px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding: var(--spacing-lg);
+    }
+  
+    .row {
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+  
+    .left {
+      margin-left: 0;
+      margin-top: var(--spacing-lg);
+    }
+  
+    .right {
+      margin-right: 0;
+    }
+  }
+  
